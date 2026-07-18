@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MathNote (PHP version)</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>MathNote</h1>
+    <p>Sederhana: catatan + kalkulator</p>
+  </header>
+
+  <main>
+    <section id="notes">
+      <h2>Catatan</h2>
+      <form id="noteForm">
+        <input id="title" placeholder="Judul" required />
+        <textarea id="content" placeholder="Tulis catatan..." required></textarea>
+        <button type="submit">Simpan</button>
+      </form>
+      <ul id="noteList"></ul>
+    </section>
+
+    <section id="calculator">
+      <h2>Kalkulator</h2>
+      <input id="expr" placeholder="Masukkan ekspresi, mis. 2+3*4" />
+      <button id="calcBtn">Hitung</button>
+      <div id="result"></div>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
